@@ -1,0 +1,67 @@
+/* Remove default space */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: white;
+    transition: 0.4s ease;
+}
+
+body.dark{
+    background: #ffffff;
+    color: black;
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+
+    top: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: gold;
+    letter-spacing: 0.01cap;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: bisque;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover{
+    color: #60a5fa;
+    transform: scale(0.9);
+}
+
+/* Dark btn */
+#darkModeBtn{
+    padding: 12px 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: rgb(197, 181, 157);
+    box-shadow: inset 4px 16px 16px rgb(47, 72, 83),inset -4px -16px 16px rgb(105, 99, 89);
+}
